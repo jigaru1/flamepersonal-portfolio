@@ -1019,6 +1019,18 @@ fieldset[disabled] .btn-theme {
   line-height: 1.1;
   text-transform: uppercase;
 }
+/* Content Wrapper Link */
+.content-wrapper-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 3;
+  text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
   .carousel-title {
