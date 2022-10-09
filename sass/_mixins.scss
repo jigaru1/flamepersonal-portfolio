@@ -204,6 +204,27 @@
     -moz-transform: translate3d($x, $y, $z);
     transform: translate3d($x, $y, $z);
 }
+    &:hover,
+    &:focus,
+    &.focus {
+        text-decoration: none;
+    }
+
+    &:active,
+    &.active {
+        background-image: none;
+        outline: 0;
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: not-allowed;
+        box-shadow: none;
+        opacity: .65;
+        pointer-events: none;
+    }
+}
 
 
 // --------------------------------------------------
